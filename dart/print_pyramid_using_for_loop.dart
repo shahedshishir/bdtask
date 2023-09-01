@@ -1,0 +1,14 @@
+void main() {
+
+  for (int i = 1; i <= 5; i++) {
+    for (int j = 1; j <= 5 - i; j++) {
+      print(" ");
+    }
+
+    for (int k = 1; k <= 2 * i - 1; k++) {
+      print("*");
+    }
+
+    print(""); // Move to the next line
+  }
+}
