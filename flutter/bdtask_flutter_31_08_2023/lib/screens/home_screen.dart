@@ -1,3 +1,4 @@
+import 'package:bdtask_flutter_31_08_2023/screens/movies_screen.dart';
 import 'package:flutter/material.dart';
 import 'profile_screen.dart';
 
@@ -16,7 +17,7 @@ class HomeScreenState extends State<HomeScreen> {
   int selectedIndex = 0;
 
   final List<Widget> widgetOptions = [
-    Text('Movies'),
+    MoviesScreen(),
     Text('Web Series'),
     ProfileScreen(),
   ];

@@ -61,7 +61,17 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/profile_image.png
-  #   - images/a_dot_ham.jpeg
+    # Movies images
+    - assets/images/movies/avatar.png
+    - assets/images/movies/infinitywar.png
+    - assets/images/movies/thenun.png
+    - assets/images/movies/thefirstavenger.png
+    - assets/images/movies/super30.png
+    - assets/images/movies/openheimer.png
+    - assets/images/movies/barbie.png
+    - assets/images/movies/interstellar.png
+    - assets/images/movies/theoutpost.png
+    - assets/images/movies/blackadam.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

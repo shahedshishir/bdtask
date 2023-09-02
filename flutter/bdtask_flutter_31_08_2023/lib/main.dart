@@ -1,3 +1,4 @@
+import 'package:bdtask_flutter_31_08_2023/screens/movies_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:bdtask_flutter_31_08_2023/screens/home_screen.dart';
 import 'package:bdtask_flutter_31_08_2023/screens/profile_screen.dart';
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => HomeScreen(),
         '/profile': (context) => ProfileScreen(),
+        'movies_scrren': (context) => MoviesScreen()
       },
     );
   }
