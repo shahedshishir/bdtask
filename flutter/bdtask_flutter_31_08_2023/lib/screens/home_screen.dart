@@ -35,14 +35,62 @@ class HomeScreenState extends State<HomeScreen> {
         title: Text("ReelFlix"),
       ),
       drawer: Drawer(
-          child: UserAccountsDrawerHeader(
-            accountName: Text("Shahed Noor"),
-            accountEmail: Text("shahednoor28@gmail.com"),
-            currentAccountPicture: CircleAvatar(
-              backgroundImage: AssetImage("images/profile_image.png"),
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            UserAccountsDrawerHeader(
+                accountName: Text("Shahed Noor"),
+                accountEmail: Text("shahednoor28@gmail.com"),
+                currentAccountPicture: Container(
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    border: Border.all(
+                      color: Colors.white,
+                      width: 1
+                    )
+                  ),
+                  child: CircleAvatar(
+                    backgroundImage: AssetImage("images/profile_image.png"),
+                  ),
+                )),
+            ListTile(
+              leading: Icon(Icons.home),
+              title: Text('Home'),
+              onTap: () {
+                Navigator.pop(context);
+              },
             ),
-            )
-          ),
+            ListTile(
+              leading: Icon(Icons.settings),
+              title: Text('Settings'),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.mail),
+              title: Text('Messages'),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.star),
+              title: Text('Favorites'),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.help),
+              title: Text('Help & Support'),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+          ],
+        ),
+      ),
       body: Center(
         child: widgetOptions.elementAt(selectedIndex),
       ),
