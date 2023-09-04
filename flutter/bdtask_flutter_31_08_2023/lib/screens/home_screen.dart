@@ -57,7 +57,10 @@ class HomeScreenState extends State<HomeScreen> {
               leading: Icon(Icons.home),
               title: Text('Home'),
               onTap: () {
-                Navigator.pop(context);
+                setState(() {
+                  Navigator.pop(context);
+                  selectedIndex = 0;
+                });
               },
             ),
             ListTile(
@@ -65,6 +68,15 @@ class HomeScreenState extends State<HomeScreen> {
               title: Text('Settings'),
               onTap: () {
                 Navigator.pop(context);
+              },
+            ),ListTile(
+              leading: Icon(Icons.person),
+              title: Text('Profile'),
+              onTap: () {
+                Navigator.pop(context);
+                setState(() {
+                  selectedIndex = 2;
+                });
               },
             ),
             ListTile(

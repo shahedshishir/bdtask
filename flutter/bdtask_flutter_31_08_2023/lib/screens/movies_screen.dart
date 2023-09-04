@@ -22,7 +22,6 @@ class MoviesScreen extends StatelessWidget {
           "images/movies/theoutpost.png",
           "images/movies/blackadam.png",
         ];
-
         String imagePath = index < imagePaths.length ? imagePaths[index] : "";
 
         return MovieCard(imagePath: imagePath);
